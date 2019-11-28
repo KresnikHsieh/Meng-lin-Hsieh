@@ -5,8 +5,8 @@ import { Cursor } from "./Cursor";
 import image1 from '../images/1_1.jpg';
 import image2 from '../images/2_1.jpg';
 import image3 from '../images/5_1.jpg';
-import image4 from '../images/3_1.jpg';
-import image5 from '../images/4_1.jpg';
+import image4 from '../images/3_1_1.jpg';
+import image5 from '../images/4_1_1.jpg';
 
 const container = document.getElementById("app");
 const cursor = new Cursor(document.querySelector('.cursor'));
@@ -20,19 +20,19 @@ const slidesData = [
   {
     image: image2,
     title: "Experience",
-    meta: "F2E & UI/UX Developer | 前端 & UI/UX 設計工程師 | 商業/活動攝影師",
+    meta: "F2E & UI/UX Developer| 前端 & UI/UX 設計工程師 | 商業/活動攝影",
     more: "about.html"
   },
   {
     image: image3,
     title: "Portfolio",
-    meta: "Vue電子商務網站 | 網站設計切版 | 素材影像處理 | 平面攝影作",
+    meta: "Vue電商網站 | 網站切版 | 素材影像處理 | api串接 | 平面攝影",
     more: "about.html"
   },
   {
     image: image4,
     title: "Skills",
-    meta: "JavaScript | Vue.js | HTML | CSS | AJAX | jQuery | Boostrap | Webpack | Github & RoR專案經驗",
+    meta: "JavaScript | Vue.js | HTML | CSS | AJAX | jQuery | Boostrap | Webpack | Github | RoR專案經驗",
     more: "about.html"
   },
   {

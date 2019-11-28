@@ -61,30 +61,6 @@
 				<a href="">Contact</a>
 			</div>
 
-
-
-
-			<div class="modal" id="modal1">
-			  <div class="modal-dialog">
-			    <header class="modal-header">
-			      The header of the first modal
-			      <button class="close-modal" aria-label="close modal" data-close>
-			        ✕  
-			      </button>
-			    </header>
-			    <section class="modal-content">
-			      <p><strong>Press ✕, ESC, or click outside of the modal to close it</strong></p>
-			      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus reprehenderit accusamus totam ratione! Nesciunt, nemo dolorum recusandae ad ex nam similique dolorem ab perspiciatis qui. Facere, dignissimos. Nemo, ea.</p>
-			      <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure</p>
-			      <p>Nullam vitae enim vel diam elementum tincidunt a eget metus. Curabitur finibus vestibulum rutrum. Vestibulum semper tellus vitae tortor condimentum porta. Sed id ex arcu. Vestibulum eleifend tortor non purus porta dapibus</p>
-			      <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure</p>
-			    </section>
-			    <footer class="modal-footer">
-			      The footer of the first modal
-			    </footer>
-			  </div>
-			</div>
-
 			<p class="frame__tip">Click &amp; Drag</p>
 		</div>
 		<div class="content" id="app">
@@ -97,38 +73,6 @@
 	</div>
 	<script src="dist/index.js"></script>
 	
-	<script type="text/javascript">
-		const openEls = document.querySelectorAll("[data-open]");
-		const closeEls = document.querySelectorAll("[data-close]");
-		const isVisible = "is-visible";
-
-		for (const el of openEls) {
-		  el.addEventListener("click", function() {
-		    const modalId = this.dataset.open;
-		    document.getElementById(modalId).classList.add(isVisible);
-		  });
-		}
-
-		for (const el of closeEls) {
-		  el.addEventListener("click", function() {
-		    this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-		  });
-		}
-
-		document.addEventListener("click", e => {
-		  if (e.target == document.querySelector(".modal.is-visible")) {
-		    document.querySelector(".modal.is-visible").classList.remove(isVisible);
-		  }
-		});
-
-		document.addEventListener("keyup", e => {
-		  // if we press the ESC
-		  if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
-		    document.querySelector(".modal.is-visible").classList.remove(isVisible);
-		  }
-		});
-	</script>
-
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
