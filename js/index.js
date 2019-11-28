@@ -1,6 +1,7 @@
 import { Showcase } from "./Showcase";
 import { Slides } from "./Slides";
 import { Cursor } from "./Cursor";
+// import { Modal } from "./Modal";
 import image1 from '../images/1_1.jpg';
 import image2 from '../images/2_1.jpg';
 import image3 from '../images/5_1.jpg';
@@ -13,27 +14,32 @@ const slidesData = [
   {
     image: image1,
     title: "About",
-    meta: "Meng-lin Hsieh | 謝孟霖"
+    meta: "Meng-lin Hsieh | 謝孟霖",
+    more: "modal1"
   },
   {
     image: image2,
     title: "Experience",
-    meta: "F2E UI/UX Developer | 前端/UIUX設計工程師"
+    meta: "F2E & UI/UX Developer | 前端 & UI/UX 設計工程師 | 商業/活動攝影師",
+    more: "about.html"
   },
   {
     image: image3,
     title: "Portfolio",
-    meta: "Vue電商網"
+    meta: "Vue電子商務網站 | 網站設計切版 | 素材影像處理 | 平面攝影作",
+    more: "about.html"
   },
   {
     image: image4,
     title: "Skills",
-    meta: "JavaScript ES6/Vue.js/HTML/CSS/AJAX/Boostrap/Webpack工具/Github專案開發經驗/Ruby on Rails專案開發經驗"
+    meta: "JavaScript | Vue.js | HTML | CSS | AJAX | jQuery | Boostrap | Webpack | Github & RoR專案經驗",
+    more: "about.html"
   },
   {
     image: image5,
     title: "Contact",
-    meta: "x19921111@gmail.com"
+    meta: "x19921111@gmail.com",
+    more: "about.html"
   }
 ];
 

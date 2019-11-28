@@ -14,11 +14,12 @@ class Slides {
       const title = createEleWithClass("h1", "slide-title");
       const meta = createEleWithClass("p", "slide-meta");
       const more = createEleWithClass("a", "slide-more");
-      more.href = "#";
+      // more.href = entry.more;
+      more.setAttribute("data-open", entry.more);
       slide.classList.add(index !== 0 ? "next" : "show-meta"); 
       meta.innerHTML = entry.meta;
       title.innerHTML = entry.title;
-      more.innerHTML = 'Read more';
+      more.innerHTML = "Read More";
       slide.appendChild(meta);
       slide.appendChild(title);
       slide.appendChild(more);
