@@ -114,75 +114,76 @@ canvas {
 	opacity: 1;
 }
 
+/*Media Query*/
 
-.open-modal {
-  font-weight: bold;
-  background: var(--blue);
-  color: var(--white);
-  padding: 0.75rem 1.75rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
+/*iPhone X/Xs/11Pro*/
+@media only screen 
+
+and (min-device-width : 375px) 
+
+and (max-device-width : 812px)
+
+and (-webkit-device-pixel-ratio : 3) {
+.slide-meta{
+	font-size: 28px;
+}
 }
 
+/*iPhone 6/6s/7/8 Plus*/
+@media only screen 
 
-/* MODAL
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background: var(--black);
-  cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.35s ease-in;
+and (min-device-width : 414px) 
+
+and (max-device-width : 736px) { 
+.slide-meta{
+	font-size: 28px;
+}
 }
 
-.modal.is-visible {
-  visibility: visible;
-  opacity: 1;
+/*iPhone 6/6s/7/8*/
+@media only screen 
+
+and (min-device-width : 375px) 
+
+and (max-device-width : 667px) {
+.slide-meta{
+	font-size: 28px;
+}
 }
 
-.modal-dialog {
-  position: relative;
-  max-width: 800px;
-  max-height: 80vh;
-  border-radius: 5px;
-  background: var(--white);
-  overflow: hidden;
-  cursor: default;
+/*// xs - Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+.slide-meta{
+	font-size: 28px;
+}
 }
 
-.modal-dialog > * {
-  padding: 1rem;
+/*// sm - Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+.slide-meta{
+	font-size: 28px;
+}
 }
 
-.modal-header,
-.modal-footer {
-  background: var(--lightgray);
+/*// md - Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+.slide-meta{
+	font-size: 28px;
+}
 }
 
-.modal-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/*// lg - Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+.slide-meta{
+	font-size: 30px;
+}
 }
 
-.modal-header .close-modal {
-  font-size: 1.5rem;
+/*// xl - Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+.slide-meta{
+	font-size: 30px;
 }
-
-.modal p + p {
-  margin-top: 1rem;
 }
-
-/* MODAL
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
