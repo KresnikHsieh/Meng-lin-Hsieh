@@ -20,7 +20,7 @@ const slidesData = [
   {
     image: image2,
     title: "Experience",
-    meta: "前端 & UI/UX 設計工程師 F2E & UI/UX Developer | 商業/活動攝影",
+    meta: "前端&UI/UX 設計工程師 F2E&UI/UX Developer | 商業/活動攝影",
     more: "experience.html"
   },
   {
@@ -38,8 +38,8 @@ const slidesData = [
   {
     image: image5,
     title: "Contact",
-    meta: "請與我聯繫",
-    more: "x19921111@gmail.com"
+    meta: "請與我聯繫 | x19921111@gmail.com",
+    more: ""
   }
 ];
 
@@ -76,3 +76,9 @@ window.addEventListener("resize", function() {
 window.addEventListener("mousemove", function(ev) {
   showcase.onMouseMove(ev);
 });
+
+function AddLink2Text($str) {
+   $str = preg_replace("#(http://[0-9a-z._/?=&;]+)#i","<a href=\"\\1\"target=\"_blank\">\\1</a>", $str);
+   $str = preg_replace("#([0-9a-z._]+@[0-9a-z._?=]+)#i","<a href=\"mailto:\\1\">\\1</a>", $str);
+   return $str;
+}
