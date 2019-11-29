@@ -13,33 +13,33 @@ const cursor = new Cursor(document.querySelector('.cursor'));
 const slidesData = [
   {
     image: image1,
-    title: "About",
-    meta: "Meng-lin Hsieh | 謝孟霖",
-    more: "modal1"
+    title: "Meng-lin Hsieh",
+    meta: "謝孟霖 | 前端工程師",
+    more: "about.html"
   },
   {
     image: image2,
     title: "Experience",
-    meta: "F2E & UI/UX Developer| 前端 & UI/UX 設計工程師 | 商業/活動攝影",
-    more: "about.html"
+    meta: "前端 & UI/UX 設計工程師 F2E & UI/UX Developer | 商業/活動攝影",
+    more: "experience.html"
   },
   {
     image: image3,
     title: "Portfolio",
     meta: "Vue電商網站 | 網站切版 | 素材影像處理 | api串接 | 平面攝影",
-    more: "about.html"
+    more: "portfolio.html"
   },
   {
     image: image4,
     title: "Skills",
     meta: "JavaScript | Vue.js | HTML | CSS | AJAX | jQuery | Boostrap | Webpack | Github | RoR專案經驗",
-    more: "about.html"
+    more: "skills.html"
   },
   {
     image: image5,
     title: "Contact",
-    meta: "x19921111@gmail.com",
-    more: "about.html"
+    meta: "請與我聯繫",
+    more: "x19921111@gmail.com"
   }
 ];
 
