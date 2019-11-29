@@ -20,7 +20,7 @@ const slidesData = [
   {
     image: image2,
     title: "Experience",
-    meta: "前端&UI/UX 設計工程師 F2E&UI/UX Developer | 商業/活動攝影",
+    meta: "Ｗeb Front-End Developer 前端工程師 | 商業/活動攝影",
     more: "experience.html"
   },
   {
