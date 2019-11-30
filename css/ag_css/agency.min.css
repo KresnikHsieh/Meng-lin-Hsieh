@@ -12,6 +12,8 @@ p {
     line-height: 1.75
 }
 
+
+
 a {
     color: #fed136
 }
@@ -22,6 +24,11 @@ a:hover {
 
 .text-primary {
     color: #b78a84 !important
+}
+
+.frame__links a{
+    color: #FFFF;
+    font-size: 16px;
 }
 
 h1,
