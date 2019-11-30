@@ -31,6 +31,16 @@ a:hover {
     font-size: 16px;
 }
 
+.exp-desc{
+  color: #FFFFF;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.skill-desc{
+    color: #FFFF;
+}
+
 h1,
 h2,
 h3,
