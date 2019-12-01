@@ -121,6 +121,8 @@ canvas {
 	font-size: 18px;
 }
 
+
+
 /*Media Query*/
 
 /*iPhone X/Xs/11Pro*/
@@ -163,6 +165,11 @@ and (max-device-width : 667px) {
 .slide-meta{
 	font-size: 28px;
 }
+.col-xs-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
 }
 
 /*// sm - Small devices (landscape phones, 576px and up)*/
