@@ -121,6 +121,10 @@ canvas {
 	font-size: 18px;
 }
 
+.portfolio-caption > h4{
+	color: #000;
+}
+
 
 
 /*Media Query*/
