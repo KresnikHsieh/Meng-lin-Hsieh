@@ -125,6 +125,17 @@ canvas {
 	color: #000;
 }
 
+.about-desc{
+	color: #FFF;
+}
+
+.about-desc .learning{
+	margin-bottom: 0px;
+}
+
+.desc-sub-detail{
+
+}
 
 
 /*Media Query*/
