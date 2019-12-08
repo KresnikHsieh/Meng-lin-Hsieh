@@ -28,47 +28,45 @@
   <link rel="stylesheet" type="text/css" href="css/base.css" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <style type="text/css">
-  	body{
-      background-image:url(images/1_1.jpg);
+  	
+    body{
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
     }
-
+    #team{
+      background-image:url(images/1_1_s.jpg);
+    }
+    #about{
+      background-image:url(images/2_1_s.jpg);
+    }
+    #portfolio{
+      background-image:url(images/5_1_s.jpg);
+    }
+    #services{
+      background-image:url(images/6_s.jpg);
+    }
     .exp-desc{
       color: #FFFFF;
       font-weight: 400;
       font-size: 18px;
     }
-
+    .h100{
+      max-height: 100%;
+    }
+    .modal-content{
+      background-color:rgba(0,0,0,0.7);
+    }
     .about-desc.learning{
 			margin-bottom: 5px;
 			font-size: 18px;
 		}
+    .col-xs-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
   </style>  
-
-  <script>
-    document.documentElement.className = "js";
-    var supportsCssVars = function() {
-      var e,
-        t = document.createElement("style");
-      return (
-        (t.innerHTML = "root: { --tmp-var: bold; }"),
-        document.head.appendChild(t),
-        (e = !!(
-          window.CSS &&
-          window.CSS.supports &&
-          window.CSS.supports("font-weight", "var(--tmp-var)")
-        )),
-        t.parentNode.removeChild(t),
-        e
-      );
-    };
-    supportsCssVars() ||
-      alert(
-        "Please view this demo in a modern browser that supports CSS Variables."
-      );
-  </script>
   <!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script> -->
 </head>
 
@@ -79,21 +77,19 @@
         <h1 class="frame__title">Meng-lin Hsieh's Portfolio</h1>
       </div>
       <div class="frame__links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="experience.html">Exp</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="skills.html">Skills</a>
+        <!-- <a href="index.html">Home</a> -->
+        <a href="#team">About</a>
+        <a href="#about">Exp</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Skills</a>
       </div>
-
-      <p class="frame__tip">Click &amp; Drag</p>
     </div>
   <!-- Navigation -->
 
   <!-- Header -->
   
 
-    <!-- Team -->
+    <!-- Team 關於我-->
     <section class="page-section" id="team">
       <div class="container">
         <div class="row">
@@ -112,7 +108,7 @@
           </div><div class="col-sm-7">
             <div class="team-member">
               <h4>簡介</h4>
-              <p class="about-desc">"追求星光、笑容、數位資訊與人文敘事結合的前端工程師與攝影人"。<br>我是謝孟霖，畢業於國立政治大學數位內容碩士班＆資訊管理學系。<br>曾在網頁製作公司擔任前端工程師/設計師實習生，對於網頁前端開發技術具有熱忱並持續學習精進中，前端框架使用Vue.js，具備使用原生Vanilla JS的經驗；能夠獨立開發SPA一頁式應用網站並串接第三方API與AJAX資料。具備操作Adobe Photoshop/Illustrator處理素材檔案的能力，並能利用PS製作簡易商業海報。希望能夠踏入F2E的世界並成為接觸多方技術的前端工程師！</p>
+              <p class="about-desc" style="font-size: 18px">"追求星光、笑容、數位資訊與人文敘事結合的前端工程師與攝影人"。<br>我是謝孟霖，畢業於國立政治大學數位內容碩士班＆資訊管理學系。<br>曾在網頁製作公司擔任前端工程師/設計師實習生，對於網頁前端開發技術具有熱忱並持續學習精進中，前端框架使用Vue.js，具備使用原生Vanilla JS的經驗；能夠獨立開發SPA一頁式應用網站並串接第三方API與AJAX資料。具備操作Adobe Photoshop/Illustrator處理素材檔案的能力，並能利用PS製作簡易商業海報。希望能夠踏入F2E的世界並成為接觸多方技術的前端工程師！</p>
             </div>
             <div class="team-member">
               <h4>學歷</h4>
@@ -123,13 +119,392 @@
           </div>
           
         </div>
-<!--         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-          </div>
-        </div> -->
       </div>
     </section>
+    
+    <!-- about 經歷-->
+    <section class="page-section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Experience</h2>
+            <h3 class="section-subheading exp-desc">學歷與經歷</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="images/ex_logo/logo-playplus.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2017.6 - 2018.1 </h4>
+                    <h4 class="subheading">普魯士網頁設計製作公司</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="exp-desc">Playplus+ Web Design</p>
+                    <p class="exp-desc">前端網頁設計工程師-intern</p>
+                    <p class="exp-detail">網頁切版 | api串接 | 協同設計師設計稿作業</p>
+                    <p class="exp-detail">素材影像處理 | RoR專案參與 | Github版本控制</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="images/ex_logo/533C0802.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2018.1 - 2018.9</h4>
+                    <h4 class="subheading">古馳上汽車商行</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="exp-desc">汽車商業攝影師 | 數位行銷</p>
+                    <p class="exp-detail">拍攝155台汽車物件</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="images/ex_logo/ph.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2013 - 2017</h4>
+                    <h4 class="subheading">業餘活動攝影師</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="exp-desc">活動紀錄攝影師、平面棚拍攝影師</p>
+                    <p class="exp-detail">擔任超過20場大中型活動之活動攝影師</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="images/ex_logo/cc.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2016.1 - 2019.1</h4>
+                    <h4 class="subheading">互動感知設計實驗室</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="exp-desc">Interactive Sensory Design Lab</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="images/ex_logo/MOST.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2015 - 2017</h4>
+                    <h4 class="subheading">科技部經濟部專案研究助理</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="exp-desc">MOST & MOEA Project Manager</p>
+                    <p class="exp-desc">Project Assistant</p>
+                    <p class="exp-detail">亞柯迪士團隊：消費者模式&使用者經驗研究</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="images/ex_logo/dct.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2015 - 2018</h4>
+                    <h4 class="subheading">國立政治大學 數位內容研究所</h4>
+                    <h4 class="subheading">數位內容與科技學士學位學程</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="exp-desc">課程教學助理</p>
+                    <p class="exp-desc">數位敘事(互動電子繪本製作)</p>
+                    <p class="exp-desc">互動科技(Arduino)</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="images/ex_logo/imba.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2012 - 2015</h4>
+                    <h4 class="subheading">國立政治大學IMBA</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="exp-desc">Class Administrative Assistant</p>
+                    <p class="exp-desc">課程行政助理 Class Administrative Assistant</p>
+                    <p class="exp-detail">負責IMBA課程行政運行</p>
+                    <p class="exp-detail">擔任來自超過20國的外籍學生與學校之溝通橋樑</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="images/ex_logo/nccuPC.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2012 - 2015</h4>
+                    <h4 class="subheading">國立政治大學 攝影研究社</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="exp-desc">社長 / 副社長 / 教學講師 / 社團顧問</p>
+                    <p class="exp-detail">領導社團與統籌活動 | 教授專業攝影課程</p>
+                    <p class="exp-detail">擔任社團營運與課程設計之顧問</p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid 作品集-->
+    <section class="page-section" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Portfolio</h2>
+            <h3 class="section-subheading exp-desc">作品集</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/vueecommtemp.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Vue電商網站</h4>
+              <p class="text-muted">Vue.js | Webpack</p>
+              <p class="text-muted">AJAX | SCSS | Bootstrap</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/ship_thumbnail.jpeg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>協鑫造船公司形象網站</h4>
+              <p class="text-muted">網站切版與設計</p>
+              <p class="text-muted">CSS | Bootstrap</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/heart_thumbnail.jpeg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>展心婦女基金會官方網站</h4>
+              <p class="text-muted">網站切版與設計</p>
+              <p class="text-muted">Google Analytics | CSS | Bootstrap</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/goodly_thumbnail.jpeg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>固迪欣儀器公司形象網站</h4>
+              <p class="text-muted">網站切版與設計</p>
+              <p class="text-muted">CSS | Bootstrap</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/net_thumbnail.jpeg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>越南金泰責任有限公司</h4>
+              <p class="text-muted">網站切版與設計</p>
+              <p class="text-muted">跨語言設計(英/越) | CSS | Bootstrap</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/ext.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>OpenData-AJAX實作網頁</h4>
+              <p class="text-muted">AJAX</p>
+              <p class="text-muted">JSON</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services 技能-->
+    <section class="page-section" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Skills</h2>
+            <h3 class="section-subheading exp-desc page-title-desc">技能與應用</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <!-- <div class="col-sm-6 col-md-3 "> -->
+          <div class="col-xs-6 col-md-3 "> 
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/es6.png" alt="">
+            </span>
+            <h4 class="service-heading">JavaScript</h4>
+            <p class="skill-desc">了解JavaScriptES6規範<br>Vanilla.js使用經驗</p>
+          </div>
+          <!-- <div class="col-sm-6 col-md-3 "> -->
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/Vue.png" alt="">
+            </span>
+            <h4 class="service-heading">Vue.js</h4>
+            <p class="skill-desc">使用Vue.js框架<br>製作SPA單頁應用程式</p>
+          </div>
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/htmlcss.jpg" alt="">
+            </span>
+            <h4 class="service-heading">HTML/CSS</h4>
+            <p class="skill-desc">使用HTML5/CSS3<br>網頁版型設計/切版</p>
+          </div>
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/jquery_logo.jpg" alt="">
+            </span>
+            <h4 class="service-heading">jQuery</h4>
+            <p class="skill-desc">使用jQuery Plugin<br>整合第三方插件動畫效果</p>
+          </div>
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/ajax_1.png" alt="">
+            </span>
+            <h4 class="service-heading">AJAX</h4>
+            <p class="skill-desc">使用Ajax/JSON<br>製作SPA架構|串接資料</p>
+          </div>
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/boostrap.png" alt="">
+            </span>
+            <h4 class="service-heading">Boostrap</h4>
+            <p class="skill-desc">使用Boostrap 3/4<br>設計RWD響應式網站</p>
+          </div>
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/vuecli3.png" alt="">
+            </span>
+            <h4 class="service-heading">Vue Cli</h4>
+            <p class="skill-desc">Webpack工具使用經驗（Vue Cli）</p>
+          </div>
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/gulp.png" alt="">
+            </span>
+            <h4 class="service-heading">Gulp</h4>
+            <p class="skill-desc">Gulp自動化工具使用</p>
+          </div>
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/google-analytics-1.svg" alt="">
+            </span>
+            <h4 class="service-heading">串接第三方API</h4>
+            <p class="skill-desc">具串接Google Analytics<br>Google Map/Facebook/第三方API經驗</p>
+          </div>
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/Octocat.jpg" alt="">
+            </span>
+            <h4 class="service-heading">Git專案版本控制</h4>
+            <p class="skill-desc">除單線進行管控，亦開branch將開發中的功能獨立，設計完再merge回去</p>
+          </div>
+          
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/ps.png" alt="">
+            </span>
+            <h4 class="service-heading">Photoshop</h4>
+            <p class="skill-desc">使用PS處理圖片素材<br>海報特效設計製作|照片精細修圖</p>
+          </div>
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/ai.jpg" alt="">
+            </span>
+            <h4 class="service-heading">Illustrator</h4>
+            <p class="skill-desc">使用Ai處理設計稿素材<br>簡易平面向量圖形繪製</p>
+          </div>
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/iba.jpg" alt="">
+            </span>
+            <h4 class="service-heading">iBooks Author</h4>
+            <p class="skill-desc">使用Apple iBooks Author with Keynote<br>設計互動式數位敘事電子書</p>
+          </div>
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/lr.png" alt="">
+            </span>
+            <h4 class="service-heading">Photoshop Lightroom</h4>
+            <p class="skill-desc">使用Adobe Photoshop Lightroom<br>進行靜態攝影大量批次修圖</p>
+          </div>
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/fcp.jpg" alt="">
+            </span>
+            <h4 class="service-heading">Apple Final Cut Pro</h4>
+            <p class="skill-desc">使用Apple Final Cut Pro<br>簡易剪輯影片、過場、特效設計</p>
+          </div>
+          <div class="col-xs-6 col-md-3 ">
+            <span class="fa-stack fa-4x">
+              <img class="rounded-circle img-fluid h100" src="images/skills/eos5d.jpg" alt="">
+            </span>
+            <h4 class="service-heading">靜態平面攝影與教學</h4>
+            <p class="skill-desc">活動攝影|汽車商業攝影<br>人像攝影|夜景攝影|基礎攝影教學</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+
+
 
 
     <!-- Footer -->
@@ -137,6 +512,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-4">
+            <a href="mailto:x19921111@gmail.com">請聯繫我：x19921111@gmail.com</a><br>
             <span class="copyright">Copyright &copy; Meng-lin Hsieh's Website 2019</span>
           </div>
           <div class="col-md-4">
@@ -170,11 +546,11 @@
     </footer>
   </main>
 
-  <div class="cursor">
+  <!-- <div class="cursor">
     <div class="cursor__inner cursor__inner--circle"></div>
     <div class="cursor__inner cursor__inner--dot"></div>
-  </div>
-  <script src="dist/index.js"></script>
+  </div> -->
+  <!-- <script src="dist/index.js"></script> -->
   
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
