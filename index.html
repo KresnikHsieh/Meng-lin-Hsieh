@@ -50,8 +50,10 @@
 		alert(
 			"Please view this demo in a modern browser that supports CSS Variables."
 		);
+
 	</script>
 	<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script> -->
+	
 </head>
 
 <body>
@@ -100,6 +102,20 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/ag_js/agency.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript">
+	$(document).ready(function () {
+	var ismobile=navigator.userAgent.match(/J2ME|Opera Mini|SonyEricsson|Nokia|iPhone|iPod|BB10|PlayBook|android|webOS|BlackBerry|Windows Phone|Windows CE/i) != null;
+	if (ismobile) {
+	// var redirect = confirm('您的手機適合手機版網頁，是否要轉到手機版網頁呢？');
+	// if (redirect)
+	window.location = 'https://kresnikhsieh.github.io/Meng-lin-Hsieh/index_mobile';
+	}
+	});
+	</script>
 
 </body>
 
