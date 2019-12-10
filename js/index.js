@@ -32,7 +32,7 @@ const slidesData = [
   {
     image: image4,
     title: "Skills",
-    meta: "JavaScript | Vue.js | HTML | CSS | AJAX | jQuery | Boostrap | Webpack | Github | RoR專案經驗",
+    meta: "JavaScript | Vue.js | HTML | SCSS | AJAX | jQuery | Boostrap | Webpack | Github | RoR專案經驗",
     more: "skills.html"
   },
   {
