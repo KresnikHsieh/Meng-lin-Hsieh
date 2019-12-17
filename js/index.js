@@ -5,7 +5,7 @@ import { Cursor } from "./Cursor";
 import image1 from '../images/1_1.jpg';
 import image2 from '../images/2_1.jpg';
 import image3 from '../images/5_1.jpg';
-import image4 from '../images/6.jpg';
+import image4 from '../images/6_3.jpg';
 import image5 from '../images/4_1.jpg';
 
 const container = document.getElementById("app");

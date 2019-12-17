@@ -141,6 +141,20 @@ canvas {
 	font-size: 25px;
 }
 
+.modal-close-btn:hover{
+	background-color: rgba(183, 138, 132,1)!important;
+	border-color: rgba(183, 138, 132,1) !important;
+}
+
+.modal-close-btn {
+  background-color: #000;
+  border-color: rgba(183, 138, 132,1);
+}
+
+.demo-btn{
+	font-size: 20px;
+}
+
 
 /*Media Query*/
 
